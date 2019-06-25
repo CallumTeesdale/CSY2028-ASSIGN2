@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<phpunit bootstrap="autoloadTests.php" stderr="true">
+    <testsuites>
+        <testsuite name="tests">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory>frans/controllers</directory>
+            <file>classes/DatabaseTable.php</file>
+            <file>classes/Picture.php</file>
+        </whitelist>
+    </filter>
+</phpunit>
